@@ -1,0 +1,79 @@
+<div class="header">
+  <h1>Test Driven Development in een agile werkomgeving</h1>
+</div>
+
+<div class="container-center">
+  <mat-card class="verslag">
+    <mat-card-content>
+      <div>
+        <p>
+          Het seminarie van ACA-IT vond plaats in het bedrijf zelf. In de focusruimte werd eerst de achterliggende
+          theorie van Test Driven Development in een agile werkomgeving gegeven. Bij TDD worden de testen geschreven
+          voordat de productiecode geschreven wordt. Het is bewezen dat deze manier van werken zorgt voor minder kosten,
+          minder productiefouten en uiteindelijk ook tijd bespaart. Doordat elke functionaliteit van de applicatie
+          testen bevat, is er geen sprake van regressie. Wanneer oude code niet meer werkt door het toevoegen van nieuwe
+          code, is dit direct zichtbaar.
+        </p>
+        <p>
+          De agile methodiek houdt in dat alle leden van het projectteam elke dag een stand-up geven voor hun
+          Kanban-bord. In deze stand-up vertellen ze waarmee ze bezig zijn, wat ze nog gaan doen en waar er mogelijk
+          problemen zijn. Op het bord hangen alle issues met de huidige fase waar deze zich in bevinden. Hierdoor weet
+          het hele team aan welke functionaliteiten er op dat moment gewerkt wordt. Wanneer er problemen aanwezig zijn
+          kan er snel op ingespeeld worden door bijvoorbeeld met twee ontwikkelaars op één computer te programmeren.
+        </p>
+        <p>
+          Na de theorie ontvingen we een project met verschillende productiefouten, deze fouten worden bugs genoemd. Op
+          het bord stonden verschillende fases getekend die we moesten doorlopen. Twee bugs moesten gevonden en gemaakt
+          worden. In groepjes van twee mochten we aan de opdrachten werken. Deze fouten moesten we zoeken in een project
+          met duizenden regels code, die we niet zelf geschreven hebben. Het is moeilijk om de structuur van zo een
+          groot project op een korte tijd te begrijpen en te weten welke functionaliteit elke klasse biedt. Fouten
+          zoeken in zo’n project was dus zeker een interessante uitdaging.
+        </p>
+        <p>
+          Het project bestond uit een frontend in Angular en een backend geschreven in Java. Met de applicatie kunnen
+          gebruikers verschillende soorten pizza’s bestellen. De eerste bug zorgde ervoor dat er bij elke pizza het
+          label “veggie” getoond werd. Dit label moet enkel getoond worden bij pizza’s die volledig bestaan uit
+          vegetarische ingrediënten. Na het schrijven van de test, die dus moest falen voor die functionaliteit, gingen
+          we de foutieve code zoeken. De fout hadden we redelijk snel gevonden, nadat ik de code juist herschreven had
+          gingen we alle testen opnieuw starten. De test faalde nog steeds, maar ik was zeker dat mijn code correct was.
+          Uiteindelijk bleek de fout in de test te zitten en niet in de productiecode, hier hebben we veel tijd aan
+          verloren.
+        </p>
+        <p>
+          Na het herstellen van de eerste bug gingen we de volgende fout zoeken. Deze bug zorgde ervoor dat het label
+          dat het aantal pizza’s weergeeft, niet overeenkwam met het werkelijk geselecteerde aantal pizza’s. Wanneer er
+          meerdere pizza’s van dezelfde soort gekozen werd, steeg het aantal slechts met één pizza. De achterliggende
+          logica moest dus rekening houden met het aantal pizza’s per order, en niet het aantal soorten pizza’s per
+          order. De bug zat verscholen in de callback function van de lus bij het winkelkarretje, die de berekende som
+          doorgeeft aan de handler.
+        </p>
+        <p>
+          Ongeveer een halfuur voor het einde van het seminarie waren we klaar met de fouten te herstellen. Ik ben
+          tevreden met de snelheid waarmee we deze opdrachten hebben uitgevoerd. Het project bevatte frameworks zoals
+          Angular en Jasmine, deze zien we volgend jaar pas. Daardoor was het ingewikkeld om fouten te zoeken en
+          herstellen. Het voelt alsof je in een vreemde taal spellingsfouten of zinsbouwfouten moet zoeken en
+          verbeteren.
+        </p>
+        <p>
+          Het was een zeer leerrijke voormiddag. We hebben kennis gemaakt met nieuwe frameworks. De begeleiders gaven
+          veel ondersteuning en uitleg als dit nodig was. Ondanks dat we alle fouten gemaakt hadden, is er toch een
+          verbeterpuntje. In het begin werkten we niet echt samen, we zochten en maakten de bug elk op onze eigen
+          laptop. Er was communicatie, maar te weinig. De begeleider zei dat we langs elkaar door aan het werken waren.
+          Hierna zijn we meer gaan communiceren en verliep de zoektocht beter.
+        </p>
+        <p>
+          Dit seminarie past in het portfolio omdat ik er voor de eerste keer TDD en agile in team leerde werken.
+          Daarnaast kwam ik ook voor het eerst in aanraking met Angular, het frontendframework waarmee ik graag
+          programmeer. Ik leerde meer over het bedrijf en hoorde dat ze Java als backendtaal gebruiken. Angular in de
+          frontend en Java in de backend zijn mijn twee favoriete technologieën.
+        </p>
+        <p>
+          Naarmate het seminarie vorderde vond ik dat er een heel leuke sfeer was tussen de begeleiders en in het
+          bedrijf. Door het feit dat ik de sfeer leuk vond en ze toevallig mijn twee favoriete programmeertalen
+          gebruiken, heb ik een gesprek gevoerd met het HR-personeel en een ontwikkelaar in verband met een stageplaats
+          voor het derde jaar.
+        </p>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

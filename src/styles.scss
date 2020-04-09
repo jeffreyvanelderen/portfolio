@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -19,11 +18,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   justify-content: center;
 }
 
-.images {
+#bigimage {
   width: 30%;
+  height: 70%;
   border-radius: 10px;
-  box-shadow: 10px 10px white;
+  box-shadow: 10px 10px #f44336;
   margin-right: 20px;
+}
+
+.verslag {
+  width: 80%;
 }
 
 .icon {
@@ -37,7 +41,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .semi {
-  max-width: 50%;;
+  max-width: 50%;
+}
+
+.graybackground {
+  background-color: darkgray;
 }
 
 .container {
@@ -53,10 +61,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 			flex-direction: column;
       align-items: center;
     }
-
-    mat-card {
-      width: 70%;
-    }
   }
 }
 
@@ -67,7 +71,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   &-element {
     margin: 10px;
-    max-width: 40%;
+    width: 40%;
 
     &-section {
       border-bottom: 0.5px dotted white;
@@ -83,4 +87,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   h1 {
     font-size: xx-large;
   }
+}
+
+p {
+  text-align: justify;
+}
+
+th {
+  font-weight: bold;
+  color: red;
+  border-right: 0.5px dotted white;
+  border-bottom: 0.5px dotted white;
+}
+
+td {
+  border-right: 0.5px dotted white;
+  text-align: center;
+}
+
+td, th {
+  padding: 5px;
+}
+
+a {
+  color: #f44336
 }
