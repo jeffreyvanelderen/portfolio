@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
-import { RouterModule } from '@angular/router';
+import { ActivitiesComponent } from './activities.component';
 import { TeximateModule } from 'ngx-teximate';
 import { MatCardModule } from '@angular/material/card';
+import { RouterModule } from '@angular/router';
 
 const routes = [
   {
-    path: '',
-    component: HomeComponent
+    path: 'activiteiten',
+    component: ActivitiesComponent
   }
 ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [ActivitiesComponent],
   imports: [
     CommonModule,
     TeximateModule,
@@ -21,6 +21,6 @@ const routes = [
 
     RouterModule.forChild(routes)
   ],
-  exports: [HomeComponent]
+  exports: [ActivitiesComponent]
 })
-export class HomeModule { }
+export class ActivitiesModule { }

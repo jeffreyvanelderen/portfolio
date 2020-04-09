@@ -3,6 +3,12 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+#background {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
 .textAnimation {
   font-size: large;
 }
@@ -40,5 +46,30 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     mat-card {
       width: 70%;
     }
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &-element {
+    margin: 10px;
+    max-width: 40%;
+
+    &-section {
+      border-bottom: 0.5px dotted white;
+      padding: 2px;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  margin: 2.5px;
+  justify-content: center;
+  h1 {
+    font-size: xx-large;
   }
 }

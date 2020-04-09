@@ -7,6 +7,8 @@ import { HomeModule } from './home/home.module';
 import { ToolbarModule } from './toolbar/toolbar.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactModule } from './contact/contact.module';
+import { ActivitiesComponent } from './activities/activities.component';
+import { ActivitiesModule } from './activities/activities.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { ContactModule } from './contact/contact.module';
 
     HomeModule,
     ToolbarModule,
-    ContactModule
+    ContactModule,
+    ActivitiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
