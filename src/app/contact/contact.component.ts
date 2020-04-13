@@ -9,13 +9,6 @@ import { fadeInLeft } from 'ng-animate';
 })
 export class ContactComponent implements OnInit {
 
-  text = 'Zin in een gesprek?';
-  letsTalkAnimation: TextAnimation = {
-    animation: fadeInLeft,
-    delay: 50,
-    type: 'letter'
-  };
-
   constructor() { }
 
   ngOnInit(): void {
