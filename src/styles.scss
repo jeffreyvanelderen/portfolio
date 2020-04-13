@@ -35,6 +35,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   height: 40px;
 }
 
+.caption {
+  color:  #f44336;
+  font-size: small;
+}
+
 .router-link-active {
   color: black;
   font-weight: bolder;
@@ -90,7 +95,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .header {
   display: flex;
-  margin: 2.5px;
+  margin: 5px;
   justify-content: center;
   h1 {
     font-size: xx-large;

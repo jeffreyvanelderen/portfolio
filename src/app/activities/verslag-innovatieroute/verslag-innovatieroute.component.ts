@@ -12,4 +12,8 @@ export class VerslagInnovatierouteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showImage(url: string) {
+    window.open(url);
+  }
+
 }

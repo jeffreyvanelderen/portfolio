@@ -12,4 +12,8 @@ export class VerslagDenemarkenComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showImage(url: string) {
+    window.open(url);
+  }
+
 }

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { VerslagSintOdaComponent } from './verslag-sint-oda.component';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 const routes = [
   {

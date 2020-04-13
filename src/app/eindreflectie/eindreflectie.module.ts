@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EindreflectieComponent } from './eindreflectie.component';
 import { RouterModule } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
 
 const routes = [
   {
@@ -14,6 +15,7 @@ const routes = [
   declarations: [EindreflectieComponent],
   imports: [
     CommonModule,
+    MatCardModule,
 
     RouterModule.forChild(routes)
   ],

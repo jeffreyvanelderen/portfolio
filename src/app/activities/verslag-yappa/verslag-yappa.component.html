@@ -40,6 +40,14 @@
           weergeeft bij elke aanvraag een willekeurige grap. Deze grap zou dan met het commando “^^joke” weergeven
           worden.
         </p>
+        <div class="container-center">
+          <label class="caption">Klik op de foto's om deze te bekijken</label>
+        </div>
+        <div class="container-center">
+          <img class="photo" (click)="showImage('assets/verslagen/yappa1.png')" src="assets/verslagen/yappa1.png">
+          <img class="photo" (click)="showImage('assets/verslagen/yappa2.png')" src="assets/verslagen/yappa2.png">
+          <img class="photo" (click)="showImage('assets/verslagen/yappa3.png')" src="assets/verslagen/yappa3.png">
+        </div>
         <p>
           Ten slotte is er de action function. Deze zorgt ervoor dat de bot gaat herhalen welke actie je wil doen. Het
           is op zich niet echt een nuttige implementatie, maar het toont aan dat er op meerdere zinnen dezelfde response

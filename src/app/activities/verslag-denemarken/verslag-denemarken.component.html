@@ -18,7 +18,7 @@
         </p>
 
         <div class="container-center">
-          <img class="photo" src="assets/verslagen/denemarken1.jpg">
+          <img class="photo" src="assets/verslagen/denemarken1.jpg" (click)="showImage('assets/verslagen/denemarken1.jpg')">
         </div>
         <p>
           Het bedrijf wil steeds de rode lijn behouden in hun producten. Elk bier is vernoemd naar een Viking, hierdoor
@@ -49,7 +49,7 @@
           maakten we ook de poster en de PowerPoint voor de presentatie.
         </p>
         <div class="container-center">
-          <img class="photo container-center" src="assets/verslagen/denemarken3.jpg" style="width: 60%;">
+          <img class="photo container-center" (click)="showImage('assets/verslagen/denemarken3.jpg')" src="assets/verslagen/denemarken3.jpg" style="width: 60%;">
         </div>
         <p>
           Op de vijfde en laatste dag van de projectweek moesten alle teams hun idee of prototype presenteren. Mijn team
@@ -63,7 +63,7 @@
           verschillende landen, er was niemand aanwezig van Frejdahl zelf.
         </p>
         <div class="container-center">
-          <img class="photo" src="assets/verslagen/denemarken2.jpg">
+          <img class="photo" (click)="showImage('assets/verslagen/denemarken2.jpg')"  src="assets/verslagen/denemarken2.jpg">
         </div>
         <p>
           Ondanks het teleurstellende einde was het een leerrijke week. Het was leuk om in het Engels te communiceren en
@@ -84,7 +84,13 @@
           van de applicatie, wat aantoont dat het team beschikte over verschillende kwaliteiten die daarna gebundeld
           werden.
         </p>
-
+        <div class="container-center">
+          <label class="caption">Klik op de foto's om deze te bekijken</label>
+        </div>
+        <div class="container-center">
+          <img class="photo" (click)="showImage('assets/verslagen/frejdahl-1.png')" src="assets/verslagen/frejdahl-1.png">
+          <img class="photo" (click)="showImage('assets/verslagen/frejdahl-2.png')" src="assets/verslagen/frejdahl-2.png">
+        </div>
       </div>
     </mat-card-content>
   </mat-card>

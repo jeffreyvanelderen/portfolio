@@ -12,4 +12,8 @@ export class VerslagYappaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showImage(url: string) {
+    window.open(url);
+  }
+
 }
