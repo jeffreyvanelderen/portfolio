@@ -1,0 +1,26 @@
+<img class="background" src="assets/motorcycle-background.jpg" alt="">
+<mat-card class="popup">
+  <mat-card-header>
+    <div class="container-center">
+      Sleep het afstudeerhoedje naar de student om toegang te krijgen tot de site!
+    </div>
+    <div class="container-end">
+      <button mat-button (click)="hide()" style="justify-content: center;">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="header">
+      <h1 *ngIf="displaySuccess">Perfect!</h1>
+    </div>
+    <div cdkDrag #source (mouseup)="drop(source, destination)">
+      <mat-icon class="material-icons">
+        school
+      </mat-icon>
+    </div>
+    <div class="container-end">
+      <img src="assets/jeffreyvanelderen.jpg" (mouseup)="drop(source, destination)" alt="student" class="photo" #destination>
+    </div>
+  </mat-card-content>
+</mat-card>

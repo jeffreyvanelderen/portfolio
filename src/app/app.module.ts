@@ -13,6 +13,7 @@ import { VerslagAcaItModule } from './activities/verslag-aca-it/verslag-aca-it.m
 import { VerslagSintOdaModule } from './activities/verslag-sint-oda/verslag-sint-oda.module';
 import { VerslagYappaModule } from './activities/verslag-yappa/verslag-yappa.module';
 import { VerslagInnovatierouteModule } from './activities/verslag-innovatieroute/verslag-innovatieroute.module';
+import { MinigameModule } from './minigame/minigame.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { VerslagInnovatierouteModule } from './activities/verslag-innovatieroute
     VerslagAcaItModule,
     VerslagSintOdaModule,
     VerslagYappaModule,
-    VerslagInnovatierouteModule
+    VerslagInnovatierouteModule,
+    MinigameModule
   ],
   providers: [],
   bootstrap: [AppComponent]

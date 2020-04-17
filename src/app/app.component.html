@@ -1,5 +1,8 @@
-<app-toolbar></app-toolbar>
+<app-toolbar *ngIf="showContent"></app-toolbar>
 
-<router-outlet>
-  <img id="background" src="assets/motorcycle-background.jpg" alt="">
+<app-minigame class="container-center" style="margin-top: 0px;" (completedMinigame)="completedMinigame($event)" *ngIf="!showContent">
+</app-minigame>
+
+<router-outlet *ngIf="showContent">
+  <img class="background" src="assets/motorcycle-background.jpg" alt="">
 </router-outlet>

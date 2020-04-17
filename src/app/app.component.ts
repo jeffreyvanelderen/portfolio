@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Jeffrey Vanelderen';
+  showContent = false;
+
+  constructor() { }
+
+  completedMinigame(isCompleted: boolean) {
+    this.showContent = isCompleted;
+  }
+
 }
